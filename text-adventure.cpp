@@ -9,4 +9,15 @@ int main()
 
   int pathChoice;
   cin >> pathChoice;
+
+  // First branch point
+  if (pathChoice == 1)
+  {
+    cout << "You come across a talking rabbit who offers to guide you through the forest. Do you accept?" << endl;
+    cout << "1. Yes" << endl;
+    cout << "2. No" << endl;
+  }
+
+  int rabbitChoice;
+  cin >> rabbitChoice;
 }
