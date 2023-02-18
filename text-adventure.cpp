@@ -58,4 +58,13 @@ int main()
       cout << "Invalid choice. Please try again." << endl;
     }
   }
+  else if (pathChoice == 2)
+  {
+    cout << "You come across a group of bandits who demand that you give them all your belongings. What do you do?" << endl;
+    cout << "1. Give them your things" << endl;
+    cout << "2. Refuse and fight them" << endl;
+
+    int banditChoice;
+    cin >> banditChoice;
+  }
 }
