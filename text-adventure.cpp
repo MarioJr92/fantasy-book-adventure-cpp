@@ -66,5 +66,20 @@ int main()
 
     int banditChoice;
     cin >> banditChoice;
+
+    // Third branch point
+    switch (banditChoice)
+    {
+    case 1:
+      cout << "The bandits take your things and let you go. You wander the forest alone and eventually die of starvation." << endl;
+      break;
+    case 2:
+      cout << "You put up a fight and manage to defeat the bandits. You find a map in their camp that leads to a treasure. What do you do?" << endl;
+      cout << "1. Follow the map" << endl;
+      cout << "2. Leave the forest" << endl;
+
+      int treasureChoice;
+      cin >> treasureChoice;
+    }
   }
 }
