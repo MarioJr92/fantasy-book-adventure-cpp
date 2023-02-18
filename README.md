@@ -1,2 +1,1 @@
-# fantasy-book-adventure-cpp
-A fantasy book adventure program in C++
+A fantasy book adventure program in C++. In this program, the user is prompted with a series of choices that determine the direction of the story. There are three branch points where the user must make a decision, and each decision leads to a different ending. The program uses conditional statements like if/else if and switch to handle user input and direct the story. There is also a loop to validate user input and prompt the user to try again if an invalid choice is made.
