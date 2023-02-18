@@ -80,6 +80,31 @@ int main()
 
       int treasureChoice;
       cin >> treasureChoice;
+
+      // Endings
+      if (treasureChoice == 1)
+      {
+        cout << "You follow the map and find the treasure. You become a rich and famous adventurer." << endl;
+        return 0;
+      }
+      else if (treasureChoice == 2)
+      {
+        cout << "You leave the forest and never think about the map again. You live a simple life and die of old age." << endl;
+        return 0;
+      }
+      else
+      {
+        cout << "Invalid choice. Please try again." << endl;
+        return 0;
+      }
+    default:
+      cout << "Invalid choice. Please try again." << endl;
+      break;
     }
+  }
+  else
+  {
+    cout << "Invalid choice. Please try again." << endl;
+    return 0;
   }
 }
