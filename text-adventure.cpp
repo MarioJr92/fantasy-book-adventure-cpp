@@ -10,6 +10,13 @@ int main()
   int pathChoice;
   cin >> pathChoice;
 
+  // Validate user input and prompt to try again if invalid
+  while (pathChoice != 1 && pathChoice != 2)
+  {
+    cout << "Invalid choice. Please enter 1 or 2:" << endl;
+    cin >> pathChoice;
+  }
+
   // First branch point
   if (pathChoice == 1)
   {
@@ -19,6 +26,13 @@ int main()
 
     int rabbitChoice;
     cin >> rabbitChoice;
+
+    // Validate user input and prompt to try again if invalid
+    while (rabbitChoice != 1 && rabbitChoice != 2)
+    {
+      cout << "Invalid choice. Please enter 1 or 2:" << endl;
+      cin >> rabbitChoice;
+    }
 
     // Second branch point
     if (rabbitChoice == 1)
@@ -30,6 +44,13 @@ int main()
 
       int wishChoice;
       cin >> wishChoice;
+
+      // Validate user input and prompt to try again if invalid
+      while (wishChoice < 1 || wishChoice > 3)
+      {
+        cout << "Invalid choice. Please enter 1, 2, or 3:" << endl;
+        cin >> wishChoice;
+      }
 
       // Endings
       switch (wishChoice)
@@ -43,19 +64,12 @@ int main()
       case 3:
         cout << "Your wish is granted and the world becomes a peaceful place. You live a happy life knowing you made a difference." << endl;
         break;
-      default:
-        cout << "Invalid choice. Please try again." << endl;
-        break;
       }
     }
     else if (rabbitChoice == 2)
     {
       cout << "You try to find your way on your own, but you get lost in the forest and are never seen again." << endl;
       return 0;
-    }
-    else
-    {
-      cout << "Invalid choice. Please try again." << endl;
     }
   }
   else if (pathChoice == 2)
@@ -66,6 +80,13 @@ int main()
 
     int banditChoice;
     cin >> banditChoice;
+
+    // Validate user input and prompt to try again if invalid
+    while (banditChoice != 1 && banditChoice != 2)
+    {
+      cout << "Invalid choice. Please enter 1 or 2:" << endl;
+      cin >> banditChoice;
+    }
 
     // Third branch point
     switch (banditChoice)
@@ -81,6 +102,13 @@ int main()
       int treasureChoice;
       cin >> treasureChoice;
 
+      // Validate user input and prompt to try again if invalid
+      while (treasureChoice != 1 && treasureChoice != 2)
+      {
+        cout << "Invalid choice. Please enter 1 or 2:" << endl;
+        cin >> treasureChoice;
+      }
+
       // Endings
       if (treasureChoice == 1)
       {
@@ -92,19 +120,6 @@ int main()
         cout << "You leave the forest and never think about the map again. You live a simple life and die of old age." << endl;
         return 0;
       }
-      else
-      {
-        cout << "Invalid choice. Please try again." << endl;
-        return 0;
-      }
-    default:
-      cout << "Invalid choice. Please try again." << endl;
-      break;
     }
-  }
-  else
-  {
-    cout << "Invalid choice. Please try again." << endl;
-    return 0;
   }
 }
