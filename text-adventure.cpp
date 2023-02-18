@@ -19,5 +19,17 @@ int main()
 
     int rabbitChoice;
     cin >> rabbitChoice;
+
+    // Second branch point
+    if (rabbitChoice == 1)
+    {
+      cout << "The rabbit leads you to a clearing where you find a treasure chest. You open it and discover a magical amulet that grants you unlimited wishes. What do you wish for?" << endl;
+      cout << "1. Wealth and riches" << endl;
+      cout << "2. Love and happiness" << endl;
+      cout << "3. World peace" << endl;
+
+      int wishChoice;
+      cin >> wishChoice;
+    }
   }
 }
