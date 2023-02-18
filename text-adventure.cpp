@@ -30,6 +30,23 @@ int main()
 
       int wishChoice;
       cin >> wishChoice;
+
+      // Endings
+      switch (wishChoice)
+      {
+      case 1:
+        cout << "You become the wealthiest person in the world, but your greed leads to your downfall. You die alone and unhappy." << endl;
+        break;
+      case 2:
+        cout << "You find true love and live a long and happy life together. Congratulations!" << endl;
+        break;
+      case 3:
+        cout << "Your wish is granted and the world becomes a peaceful place. You live a happy life knowing you made a difference." << endl;
+        break;
+      default:
+        cout << "Invalid choice. Please try again." << endl;
+        break;
+      }
     }
   }
 }
