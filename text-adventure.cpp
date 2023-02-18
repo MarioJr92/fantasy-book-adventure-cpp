@@ -48,5 +48,14 @@ int main()
         break;
       }
     }
+    else if (rabbitChoice == 2)
+    {
+      cout << "You try to find your way on your own, but you get lost in the forest and are never seen again." << endl;
+      return 0;
+    }
+    else
+    {
+      cout << "Invalid choice. Please try again." << endl;
+    }
   }
 }
